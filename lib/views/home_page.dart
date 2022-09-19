@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
     _bottomBannerAd = BannerAd(
       size: AdSize.banner,
       adUnitId: AdHelp.bannerAdUnitId,
-      request: AdRequest(),
+      request: const AdRequest(),
       listener: BannerAdListener(onAdLoaded: (_) {
         setState(() {
           isbottomBannerAdLoad = true;
@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
         width: _bottomBannerAd.size.width.toDouble(),
         child: AdWidget(ad: _bottomBannerAd),
       ) : null,
-      body: Center(
+      body: const Center(
         child: Text("Home Page"),
       ),
     );

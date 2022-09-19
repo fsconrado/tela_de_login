@@ -13,9 +13,9 @@ void main(){
     MaterialApp(
       initialRoute: '/splash',
       routes: {
-        '/home':(_)=> HomePage(),
-        "/splash":(_)=> SplashPage(),
-        '/login': (_)=> LoginPage(),
+        '/home':(_)=> const HomePage(),
+        "/splash":(_)=> const SplashPage(),
+        '/login': (_)=> const LoginPage(),
       },
     )
   );
